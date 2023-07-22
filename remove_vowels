@@ -1,0 +1,12 @@
+def remove_vowels(string):
+    #list_vowels=['a','e','i','o','u','A','']
+    vowels="aeiouAEIOU"
+    string1=""
+    for char in string:
+        if char not in vowels:
+            continue # anything below doesnot execute but iterates another round of loop
+            string1+=char
+          
+    return string1
+            
+print(remove_vowels("Hello world"))
