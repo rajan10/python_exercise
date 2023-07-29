@@ -15,3 +15,34 @@ print(my_frozen_set)
 #print(my_frozen_set)
 
 print(dir(frozenset))
+
+print("=================")
+x=["apple", "banana"]
+y=["apple", "banana"]
+if (x is y):
+    print("True")
+print("false")
+if (x==y):
+    print("contents of x and y is same and hence returns True")
+else:
+    print("contents are not same and hence doesnot not return false")
+    
+print("++++++++++++++++++++++++++++++")   
+print("test string is immutable")
+
+my_string="immutable"
+print(type(my_string))
+print(id(my_string))
+print("After trying to add")
+my_string+="add this"
+print(type(my_string))
+print(id(my_string))
+
+print("list to test for mutability, it will have same memory address")
+my_list=["hello",True,123.45]
+print(type(my_list))
+print(id(my_list))
+print("after inserting one more elements in the list")
+my_list.insert(1,False)
+print(type(my_list))
+print(id(my_list))
