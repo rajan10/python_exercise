@@ -46,3 +46,17 @@ print("after inserting one more elements in the list")
 my_list.insert(1,False)
 print(type(my_list))
 print(id(my_list))
+
+
+class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+
+class Driver:
+    def __init__(self, name):
+        self.name = name
+
+driver1 = Driver("John")
+car1 = Car("Toyota", "Camry")
+car1.driver = driver1  
