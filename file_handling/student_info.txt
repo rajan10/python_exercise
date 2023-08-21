@@ -1,0 +1,2 @@
+Roll:1	Name:Rita	Faculty:Physics
+Roll:2	Name:Rita	Faculty:Home-science
