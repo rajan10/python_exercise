@@ -1,0 +1,21 @@
+
+from typing import Callable
+import time
+
+
+def decorator_function(fxn: Callable) -> Callable:
+    def wrapper(x: int, y: float):
+        start_time = time.time()
+        output = fxn(x, y)
+        end_time = time.time()
+        print(f"The time to process: {end_time-start_time}")
+        return output
+    return wrapper
+
+  
+@decorator_function
+def add(x: int, y: float) -> float:
+    return x + y
+
+
+print(add(3, 1.5))

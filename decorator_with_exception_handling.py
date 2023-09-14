@@ -10,8 +10,8 @@ def higher_order_function(fxn: Callable) -> Callable:
                 raise ValueError("All elements must be integers") # funct out of for loop
             
         output = fxn(*args, **kwargs)
-        print("after sum")
-        return output                    
+        return output
+                             
     return wrapper
 
 @higher_order_function
@@ -23,7 +23,7 @@ def summation(*args, **kwargs):
 
 
 try:
-    new_result = summation(1, 2, 3, a=7, b=1.5)
+    new_result = summation(1, 2, 3, a=7, b=1)
     print(new_result)
 except ValueError as e:
     print(f"Error: {e}")
